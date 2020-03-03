@@ -4,8 +4,8 @@ node_js:
 
 after_script:
   - grunt
-  - grunt css
-  - grunt es
+  # - grunt css
+  # - grunt es
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - git add .
