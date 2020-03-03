@@ -1,30 +1,29 @@
+/* global module: true */
 module.exports = function (grunt) {
-    grunt.initConfig({
-      htmlhint: {
-        options: {
-          htmlhintrc: './.htmlhintrc'
-        },
-        src: ['*.html']
+  grunt.initConfig({
+    eslint: {
+      options: {
+        configFile: '.eslintrc.json'
       },
-      csslint: {
-        options: {
-          csslintrc: './.csslintrc'
-        },
-        src: ['*.css']
+      target: ['*.js']
+    },
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
       },
-      eslint: {
-        options: {
-          eslintrc: './.eslintrc.json'
-        },
-        target: ['*.js']
-      }
-    });
-  
-    grunt.loadNpmTasks('grunt-htmlhint');
-    grunt.loadNpmTasks('grunt-contrib-csslint');
-    grunt.loadNpmTasks('grunt-eslint');
+      src: '*.css'
+    },
+    htmlhint: {
+      options: {
+        htmlhintrc: '.htmlhintrc'
+      },
+      src: '*.html'
+    }
+  });
 
-    grunt.registerTask('default', ['htmlhint']);
-    grunt.registerTask('css', ['csslint']);
-    grunt.registerTask('es', ['eslint']);
-  };
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-htmlhint');
+  grunt.loadNpmTasks('grunt-eslint');
+
+  grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
+};
