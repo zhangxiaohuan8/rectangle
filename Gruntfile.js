@@ -24,6 +24,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-eslint');
+  grunt.loadNpmTasks('grunt-mocha');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
 };
