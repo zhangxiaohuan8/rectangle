@@ -4,12 +4,16 @@
   "description": "",
   "main": "rectangle.js",
   "dependencies": {
-    "grunt": "^1.1.0",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-eslint": "^22.0.0",
     "grunt-htmlhint": "^0.9.13"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
