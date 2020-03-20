@@ -10,9 +10,13 @@
  <body>
      <div>
          <lable>宽度:</lable>
-         <input id="width" type="text"><br>
+         <input id="width" type="text" autofocus>
+         <span>*</span>
+         <br>
          <lable>高度:</lable>
-         <input id="height" type="text"><br>
+         <input id="height" type="text">
+         <span>*</span>
+         <br>
          <input id="calculate"type="button" value="计算"><br>
          <lable>周长:</lable>
          <input id="perimeter"type="text" disabled><br>
@@ -20,6 +24,9 @@
          <input id="area"type="text" disabled><br>
      </div>
      <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <!-- build:js bundle.min.js -->
      <script src="./rectangle.js"></script>
+     <script src="calc.js"></script>
+     <!-- endbuild -->
  </body>
  </html>
