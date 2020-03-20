@@ -1,0 +1,26 @@
+{
+  "name": "rectangle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rectangle.js",
+  "dependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-eslint": "^22.0.0",
+    "grunt-htmlhint": "^0.9.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangxiaohuan8/rectangle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangxiaohuan8/rectangle/issues"
+  },
+  "homepage": "https://github.com/zhangxiaohuan8/rectangle#readme"
+}
