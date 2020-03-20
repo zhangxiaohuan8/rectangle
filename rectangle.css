@@ -1,6 +1,6 @@
 div{
-    width:300px;
-    margin:50px auto;
+    margin:auto;
+    margin-left:40%;
     font-size:1.1em;
 }
 #calculate{
@@ -15,3 +15,9 @@ input,label{
     padding-left:5px;
     font-size:1em;
 } 
+#width-validation-message{
+    color:red;
+}
+#height-validation-message{
+    color:red;
+}
