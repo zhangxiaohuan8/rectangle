@@ -70,11 +70,6 @@ $(function(){
             $data.html;
             return false;
         }
-        if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test($data.val())){
-            $msg.html('必须是数值');
-            $data.html;
-            return false;
-        }
         if(Number($data.val())<0){
             $msg.html('不能为零');
             $data.html;
